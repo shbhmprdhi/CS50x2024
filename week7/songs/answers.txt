@@ -1,0 +1,4 @@
+1. I'll use the parameters provided in songs like danceability, energy, loudness, tempo to characterise the aura
+
+2. The way I characterized might not be the representative of user as these factors are not enough.
+I'll characterise using genre and other factors to make the aura.

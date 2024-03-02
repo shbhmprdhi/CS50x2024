@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: lato, sans-serif;
+    scroll-behavior: smooth;
+    font-style: var(--black);
+}
+
+:root {
+    --green: #96a535;
+    --orange: #e16f29;
+    --yellow: #ebad39;
+    --beige: #ede3d3;
+    --black: #141402;
+    --white: 245, 245, 245;
+    --maintransition: all 0.3s linear;
+    --gradient: linear-gradient(60deg, rgba(233, 174, 5, 1) 15%, rgba(221, 114, 15, 1) 50%, rgba(152, 166, 12, 1) 85%);
+}
+
+
+::selection {
+    color: white;
+    background: var(--green);
+}
+
+
+/* Custom fonts */
+.playfair{
+    font-family: playfair-display, serif;
+}
+
+.noto {
+    font-family: 'Noto Emoji';
+}
+
+
+
+/* Title */
+nav .navbar-brand {
+    font-size: xxx-large;
+    font-weight: 900;
+}
+
+
+
+/* Font weights */
+.fw-3{
+    font-weight: 300;
+}
+
+.fw-4{
+    font-weight: 400;
+}
+
+.fw-5{
+    font-weight: 500;
+}
+
+.fw-6{
+    font-weight: 600;
+}
+
+.fw-7{
+    font-weight: 700;
+}
+
+
+
+/* Input fields (hover/focus) */
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+.card:hover,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="checkbox"]:hover,
+input[type="radio"]:hover,
+input[type="color"]:focus {
+    border-color: rgba(20, 20, 2, 0.1);
+    box-shadow: 0 1px 1px rgba(20, 20, 2, 0.075) inset, 0 0 8px rgba(20, 20, 2, 0.2);
+    outline: none;
+    transition: var(--maintransition);
+}
+
+
+
+/* Checkboxes & Radio */
+label {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+input[type="checkbox"]:checked,
+input[type="radio"]:checked {
+    background-color: var(--green)!important;
+    outline: none!important;
+    border: none!important;
+    box-shadow: 0 1px 1px rgba(20, 20, 2, 0.075) inset, 0 0 8px rgba(20, 20, 2, 0.2)!important;
+}
+
+input:hover+label {
+    opacity: 0.8;
+    transition: var(--maintransition);
+}
+
+
+input:checked+label {
+    font-weight: 500;
+    opacity: 1;
+    transition: var(--maintransition);
+}
+
+
+
+/* Carousel images */
+.carousel {
+    width: 25rem;
+    height: 25rem;
+    background-size: contain;
+    align-self: center;
+    transition: var(--maintransition);
+}
+
+
+
+/* Off white background */
+.form, .active {
+    background-color: rgba(var(--white), 0.85)!important;
+    border-radius: 0.25rem;
+    border: 0!important;
+}
+
+
+
+/* Links */
+a {
+    color: var(--orange)!important;
+    text-decoration: none!important;
+}
+
+a:hover,
+a:active {
+    color: var(--yellow) !important;
+    transition: var(--maintransition) !important;
+}
+
+
+
+/* BUTTON / SUBMIT */
+/* On hover and active */
+.yellow,
+.yellow:hover,
+.yellow:active,
+button,
+button:hover,
+button:active,
+.field span,
+.field span:hover,
+.field span:active,
+input[type="submit"],
+input[type="submit"]:hover,
+input[type="submit"]:active{
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Opacity on default */
+.yellow,
+button,
+.field span,
+input[type="submit"] {
+    opacity: 1;
+}
+
+/* Opacity on hover and active */
+.yellow:hover,
+.yellow:active,
+button:hover,
+button:active,
+.field span:hover,
+.field span:active,
+input[type="submit"]:hover,
+input[type="submit"]:active,
+.footer:hover,
+.footer:active{
+    transition: var(--maintransition) !important;
+    opacity: 0.7;
+}
+
+/* Yellow button (external links) */
+.yellow,
+.yellow:hover,
+.yellow:active{
+    background-color: var(--yellow) !important;
+}
+
+/* Green button (default) */
+button,
+button:hover,
+button:active,
+.field span,
+.field span:hover,
+.field span:active,
+input[type="submit"],
+input[type="submit"]:hover,
+input[type="submit"]:active{
+    background-color: var(--green) !important;
+}
+
+
+
+/* + or - ingredients in index.html */
+.field span:last-child {
+    display: none;
+}
+
+.field {
+    display: flex;
+}
+
+
+
+/* Waving hand emoji css from: https: //jarv.is/notes/css-waving-hand-emoji/*/
+.wave{
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    transform-origin: 70% 70%;
+    display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: rotate(0.0deg)
+    }
+    10% {
+        transform: rotate(14.0deg)
+    }
+    20% {
+        transform: rotate(-8.0deg)
+    }
+    30% {
+        transform: rotate(14.0deg)
+    }
+    40% {
+        transform: rotate(-4.0deg)
+    }
+    50% {
+        transform: rotate(10.0deg)
+    }
+    60% {
+        transform: rotate(0.0deg)
+    }
+    100% {
+        transform: rotate(0.0deg)
+    }
+}
+
+
+
+/* Hide */
+.hide{
+    display: none;
+}
+
+
+
+/* Back to top */
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}

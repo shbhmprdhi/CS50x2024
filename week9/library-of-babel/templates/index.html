@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <h1 class="mt-5">Library of Babel</h1>
+
+    <!-- TODO: Implement a search form -->
+    <form action="/" method="post">
+        <input name="page" type="number">
+        <button type="Submit">Go to page</button>
+    </form>
+
+    <p class="text-break mt-3">
+        {{ string }}
+    </p>
+
+    <!-- TODO: Implement a search history table -->
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Search History
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in history %}
+                <tr>
+                    <td>{{ row["page"] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
