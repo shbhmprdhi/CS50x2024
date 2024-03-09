@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Madimi One
+- Font Author: Copyright 2024 The Madimi One Project Authors (https://github.com/TaVaTake/madimi)
+- Font Source: https://fonts.gstatic.com/s/madimione/v1/2V0YKIEADpA8U6RygDnZZFQoBoHMd2U.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
